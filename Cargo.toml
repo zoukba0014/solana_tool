@@ -1,0 +1,22 @@
+[package]
+name = "solana_tool"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.4.12", features = ["derive"] }
+tokio = { version = "1.35.1", features = ["full"] }
+solana-client = "^1.16"
+solana-program = "^1.16"
+solana-sdk = "^1.16"
+solana-transaction-status = "^1.16"
+spl-token = { version = "^4", features = ["no-entrypoint"] }
+spl-associated-token-account = { version = "^2.2", features = [ "no-entrypoint" ] }
+fern = { version = "0.6.2", features = ["colored"] }
+anyhow = "1.0.70"
+log = "0.4"
+chrono = "0.4.34"
+futures = "0.3"
+bs58 = "0.5.1"
+serde = "1.0.198"
+serde_json = "1.0.116"
